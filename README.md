@@ -2,8 +2,6 @@
 
 This repository accompanies the **Data Modeling** course at TH Köln in the winter semester of 2024/25. Other resources like the lectures slides or the group assignment can be found on [Moodle](https://elearning.iws.th-koeln.de/moodle/course/view.php?id=2565).
 
-**(Please insert links to your personal GitHub account and your group's repository below. You can remove this comment from this README afterwards.)**
-
 :octocat: [My GitHub profile](https://github.com/daviallencar) | :busts_in_silhouette: [My group repository]()
 
 You will use this repository to document your **individual lab assignments** throughout the semester. Please add your results and solutions to the assignments in the corresponding directories linked in the table below.
