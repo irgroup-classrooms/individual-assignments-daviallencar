@@ -1,3 +1,4 @@
+```markdown
 # First round playing
 
 278 cd downloads
@@ -45,7 +46,7 @@
 320 ls
 321 ./ monster
 322 ./monster
-Monster killed me
+**Monster killed me**
 323 history -100 >> bashcrawl.log
 324 history >> bashcrawl.log
 325 cat bashcrawl.log
@@ -80,4 +81,4 @@ Copiar código
 347 ./treasure
 348 export I=coins,$I
 349 ./statue
-I died again
+**I died again**
