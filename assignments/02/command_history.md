@@ -57,9 +57,6 @@
 330 cd ..
 331 cd ..
 
-bash
-Copiar código
-
 ```markdown
 # Second round playing
 
