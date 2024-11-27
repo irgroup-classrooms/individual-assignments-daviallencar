@@ -1,4 +1,4 @@
-First round playing
+# First round playing
 
  278  cd downloads
   279  cd bashcrawl
@@ -45,6 +45,7 @@ First round playing
   320  ls
   321  ./ monster
   322  ./monster
+  **The monster killed me**
   323  history -100 >> bashcrawl.log
   324  history >> bashcrawl.log
   325  cat bashcrawl.log
@@ -55,7 +56,7 @@ First round playing
   330  cd ..
   331  cd ..
 
-Second round playing
+# Second round playing
 
   332  cd bashcrawl_game/entrance
   333  cd bashcrawl_game/entrance
@@ -64,7 +65,16 @@ Second round playing
   336  cd cellar
   337  ls
   338  cat treasure
-  339  ls
-  340  cd armoury
-  341  ls
-  342  history
+  339  ./treasure
+  340  export I=amulet,$I
+  341  echo $I
+  342  ls
+  343  cd armoury
+  344  ls
+  345  ./potion
+  346  cd chamber
+  347  ./treasure
+  348  export I=coins,$I
+  349  ./statue
+**I died again**
+  
