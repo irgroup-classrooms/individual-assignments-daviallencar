@@ -1,4 +1,4 @@
-# First round playing
+**First round playing**
 278 cd downloads
 279 cd bashcrawl
 280 cd entrande
@@ -54,7 +54,7 @@
 329 clear
 330 cd ..
 331 cd ..
-# Second round playing
+**Second round playing**
 332 cd bashcrawl_game/entrance
 333 cd bashcrawl_game/entrance
 334 ls
