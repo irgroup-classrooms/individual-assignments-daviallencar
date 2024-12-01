@@ -1,5 +1,7 @@
-# First 3 lines of the file 2014-01_JA.tsv
-echo "First 3 lines of the file 2014-01_JA.tsv:"
+#!/bin/bash
+
+# First 3 lines of the 2014-01_JA.tsv file
+echo "First 3 lines of the 2014-01_JA.tsv file:"
 head -n 3 "shell-lesson/2014-01_JA.tsv"
 echo ""
 
@@ -12,4 +14,3 @@ echo ""
 echo "File with the highest number of lines:"
 wc -l shell-lesson/* 2>/dev/null | sort -nr | head -n 1 | awk '{print $2}'
 echo ""
-
