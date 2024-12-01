@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 # First 3 lines of the 2014-01_JA.tsv file
 echo "First 3 lines of the 2014-01_JA.tsv file:"
