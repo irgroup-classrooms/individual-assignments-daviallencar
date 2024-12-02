@@ -12,43 +12,44 @@ You can add your command line in- and outputs directly to this README file. Alte
 
 1. Extract all email addresses from the text.
 ``` 
+grep -E -o '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}' contacts.csv
 
 ``` 
 2. Extract all phone numbers from the text.
 ``` 
-
+grep -oE '\([0-9]{3}\) [0-9]{3}-[0-9]{4}|[0-9]{3}-[0-9]{3}-[0-9]{4}' contacts.csv
 ``` 
 3. Extract all names that start with the letter ‘J’.
 ``` 
-
+grep -oE '\bJ[a-zA-Z]*' contacts.csv
 ``` 
 4. Extract all street names that contain the word 'St'.
 ``` 
-
+grep -oE '[^,]*St[^,]*' contacts.csv
 ``` 
 5. Extract all addresses in ‘USA’.
 ``` 
-
+grep 'USA' contacts.csv
 ``` 
 6. Extract the last names of all people.
 ``` 
-
+grep -oE '^[^,]+' contacts.csv | awk '{print $2}'
 ``` 
 7. Extract all email domains (part after the @ sign).
 ``` 
-
+grep -E -o '@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}' contacts.csv | sed 's/@//'
 ``` 
 8.	Extract all instances of the first name ‘David’ along with their full address (street and city).
 ``` 
-
+grep -E 'David' contacts.csv
 ``` 
 9.	Find all entries where the phone number ends with ‘7’.
 ``` 
-
+grep -oE '\([0-9]{3}\) [0-9]{3}-[0-9]{3}7' contacts.csv
 ``` 
 10.	Extract all instances of first names that end with the letter 'e'.
 ``` 
-
+$ grep -E -o '\b[a-zA-Z]*e\b' contacts.csv
 ``` 
 
 ## Parsing product orders with Python
