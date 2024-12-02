@@ -17,19 +17,19 @@ grep -E -o '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}' contacts.csv
 ``` 
 2. Extract all phone numbers from the text.
 ``` 
-
+grep -oE '\([0-9]{3}\) [0-9]{3}-[0-9]{4}|[0-9]{3}-[0-9]{3}-[0-9]{4}' contacts.csv
 ``` 
 3. Extract all names that start with the letter ‘J’.
 ``` 
-
+grep -oE '\bJ[a-zA-Z]*' contacts.csv
 ``` 
 4. Extract all street names that contain the word 'St'.
 ``` 
-
+grep -oE '[^,]*St[^,]*' contacts.csv
 ``` 
 5. Extract all addresses in ‘USA’.
 ``` 
-
+grep 'USA' contacts.csv
 ``` 
 6. Extract the last names of all people.
 ``` 
