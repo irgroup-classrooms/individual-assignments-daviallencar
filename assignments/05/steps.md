@@ -34,23 +34,29 @@ In this step, we removed unwanted special characters from the dataset, keeping o
 ```
 sed -E 's/[^a-zA-Z0-9.,?! ]//g' final_lotr_scripts.csv > lotr_cleaned.csv
 ```
-1.
+1.1
+```sh
 davio@DaviG15 MINGW64 ~/individual-assignments-daviallencar/assignments/05 (main)
 $ wc -l cleaned_lotr_scripts.csv
 2391 cleaned_lotr_scripts.csv
+```
 
-1.1
-
+1.2
+```sh
 davio@DaviG15 MINGW64 ~/individual-assignments-daviallencar/assignments/05 (main)
 $ awk -F, '{print $2}' cleaned_lotr_scripts.csv | tr ' ' '\n' | tr -d '[:punct:]' | sort | uniq | wc -l
 3729
+```
 
 2.
+```sh
 davio@DaviG15 MINGW64 ~/individual-assignments-daviallencar/assignments/05 (main)
 $ cat cleaned_lotr_scripts.csv | awk -F',' '{print $3}' | sort | uniq -c
 >> it didn't work so well
+```
 
 3.
+```sh
 davio@DaviG15 MINGW64 ~/individual-assignments-daviallencar/assignments/05 (main)
 $ awk -F',' '{gsub(/"/, "", $1); print $1}' cleaned_lotr_scripts.csv | sort | uniq -c | sort -nr | head -n 5
     225 FRODO
@@ -58,8 +64,10 @@ $ awk -F',' '{gsub(/"/, "", $1); print $1}' cleaned_lotr_scripts.csv | sort | un
     204 GANDALF
     185 ARAGORN
     163 PIPPIN
+```
 
 4.
+```sh
 davio@DaviG15 MINGW64 ~/individual-assignments-daviallencar/assignments/05 (main)
 $ cut -d',' -f2 cleaned_lotr_scripts.csv | tr ' ' '\n' | tr "[!?.]" "\n" | sort | uniq -c | sort -nr | head -n 5 
     540 the
@@ -67,3 +75,4 @@ $ cut -d',' -f2 cleaned_lotr_scripts.csv | tr ' ' '\n' | tr "[!?.]" "\n" | sort 
     329 you
     320 to
     221 is
+```
